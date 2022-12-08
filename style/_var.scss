@@ -1,0 +1,24 @@
+$bg-primary: #03faee;
+$bg-secondary: #f8f8f8;
+$color-primary: #8b8b8b;
+$shadow: #92f7f2;
+
+@mixin rectangulo ($largo,$ancho) {
+    width: $largo;
+    height: $ancho;
+    background-color:$bg-primary;
+    position: absolute;
+    z-index: -1;
+}
+
+@mixin circulo ($estiloBorde){
+    width: 50px;
+    height: 50px;
+    background-color: $bg-secondary;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    margin-left: -1rem;
+    border-style:$estiloBorde;
+    border-color: $color-primary;
+    box-shadow: -5px 0px $shadow ;
+}
